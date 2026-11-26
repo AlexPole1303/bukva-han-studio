@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f7f7f2"><title>Буква Хань — студия иероглифов</title><meta name="description" content="Изучайте китайские иероглифы по составляющим. Разбор графем, уроки и карточки с повторением."><link rel="icon" href="seal.svg"><link rel="stylesheet" href="inter.css"><link rel="stylesheet" href="stix.css"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="study.css"></head>
+<body>
+<header class="top"><div class="top-in"><a href="#parse" class="brand"><span class="seal" lang="zh-Hans">字</span><span>Буква Хань</span></a><nav aria-label="Основная навигация"><a href="#parse" data-view="parse"><i data-icon="frames"></i>Разбор</a><a href="#study" data-view="study"><i data-icon="book"></i>Обучение</a><a href="#library" data-view="library"><i data-icon="bookmark"></i>Мой словарь<span id="saved-count"></span></a></nav><button class="help" id="help" aria-label="Как пользоваться" title="Как пользоваться"><i data-icon="help"></i></button></div></header>
+<main class="page"><section id="workspace">
+<div class="intro"><div class="landscape" aria-hidden="true"></div><div class="intro-copy"><h1>Разбор иероглифов</h1><p>Введите знак или фразу, чтобы увидеть графемы и их значения.</p></div></div>
+<form id="search" class="search"><i data-icon="search"></i><input id="entry" aria-label="Иероглифы для разбора" placeholder="Введите иероглиф или фразу" value="明" autocomplete="off" spellcheck="false"><button class="action" type="submit"><i data-icon="frames"></i>Разобрать</button></form>
+<p class="error" id="input-error" role="alert" hidden></p><div id="sequence" hidden></div>
+<section aria-label="Разбор выбранного знака"><div class="section-bar"><h2>Структура знака</h2><button class="save-button" id="save"><i data-icon="bookmark"></i><span>В словарь</span></button></div><div id="trail"></div>
+<div class="analysis-grid"><article class="specimen" id="specimen"></article><article class="components"><div id="parts"></div><aside id="hint"></aside></article></div></section>
+<section class="examples"><div class="section-bar"><h2>Попробуйте разобрать</h2><button class="refresh" id="shuffle"><i data-icon="shuffle"></i><span>Другие примеры</span></button></div><div class="example-grid" id="examples"></div></section>
+</section><section id="study-root" hidden></section></main>
+<footer><span class="small-brand"><span lang="zh-Hans">字</span> Буква Хань</span><button id="sources">Источники и данные</button></footer>
+<dialog id="dialog"><div class="dialog-head"><h2 id="dialog-title"></h2><button id="close" class="icon-btn" aria-label="Закрыть"><i data-icon="close"></i></button></div><div id="dialog-body"></div></dialog><div id="notice" role="status"></div>
+<script src="dictionary.js"></script><script src="unihan.js"></script><script src="courses.js"></script><script src="study.js"></script><script src="app.js"></script></body></html>
